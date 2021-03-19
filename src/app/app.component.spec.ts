@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'lastFMspa'`, () => {
+  it(`should have as title 'lastFm'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('lastFMspa');
+    expect(app.title).toEqual('lastFm');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('lastFMspa app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('lastFm app is running!');
   });
 });
